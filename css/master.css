@@ -6790,23 +6790,24 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 body {
-  background: pink; }
+  background: #fff; }
   body nav {
+    height: 10vh;
     background: rgba(255, 255, 255, 0.5); }
     body nav .button-collapse {
       color: #00FF7F; }
+    body nav .container ul a {
+      color: #222; }
     body nav .brand-logo {
       color: #00FF7F; }
-  body .navbar-fixed {
-    position: fixed; }
   body #home {
     background: white;
-    height: 100vh;
+    height: 90vh;
     text-align: center; }
     body #home h1 {
       color: #F08080;
       margin: 0;
-      padding: 30vh 0 0; }
+      padding: 25vh 0 0; }
     body #home p {
       max-width: 50%;
       margin: 2rem auto 3rem; }
@@ -6815,6 +6816,11 @@ body {
       color: white;
       padding: 1rem 3rem;
       border-radius: 2rem;
-      background-image: linear-gradient(to right, #F08080, #EF3232); }
+      background-image: linear-gradient(to right, #F08080, #EF3232);
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8); }
+      body #home .call-to-action:hover {
+        box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.8); }
+  body .waves-effect.waves-coral .waves-ripple {
+    background-color: rgba(255, 181, 181, 0.65); }
 
 /*# sourceMappingURL=master.css.map */
