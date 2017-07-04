@@ -117,8 +117,6 @@ body
               box-shadow: 0px 6px 15px -3px transparentize(black, 0.5)
 
 
-
-
     padding: 5rem 0
     position: relative
     &:after
@@ -134,6 +132,83 @@ body
         repeat: no-repeat
         size: contain
         position: top
+
+  #about
+    max-width: 80%
+    margin: 5rem auto
+    background:
+      image: url('../img/doctor-medical-team-illustration.jpg')
+      position: left center
+      size: contain
+      repeat: no-repeat
+    h3
+      text-align: center
+    p
+      color: grey
+      text-shadow: 0px 0px 3px transparentize(white, 0.5)
+    .m5
+      .social-icons
+        .col
+          padding: 0 25% 0 0
+
+          svg
+            height: 3rem
+            width: 3rem
+            border-radius: 50%
+            border: 0.25rem solid $primary-light
+            background: $primary-light
+            box-shadow: 0px 2px 3px transparentize(black, 0.8)
+            path
+              fill: white
+        a:hover
+          svg
+            box-shadow: 0px 2px 8px transparentize(black, 0.5)
+
+  #products
+    max-width: 80%
+    margin: 0 auto
+    padding: 5rem 0
+    h3
+      text-align: center
+    .carousel
+      height: 30rem
+      padding: 2rem 0
+      .carousel-item
+        text-align: center
+        background: $primary-color
+        min-width: 20rem
+        height: 28rem
+        border-radius: 3px
+        h4
+          font-size: 1.5rem
+          margin: 0
+          padding: 3rem 0 1rem
+        img
+          height: 150px
+        .material-icons
+          line-height: 0
+          font-size: 16px
+          padding-right: 5px
+        p
+          font-size: 16px
+          margin: 0.25rem
+        .call-to-action
+          font-size: 1.25rem
+          color: $accent
+          margin-top: 1rem
+          padding: 0.5rem 1.5rem
+          background: white
+          border-radius: 2rem
+          box-shadow: 0px 2px 5px transparentize(black, 0.6)
+          transition: all 300ms ease-out
+          &:hover
+            background-image: linear-gradient( to right, $accent, $accent-dark)
+            color: white
+            box-shadow: 0px 6px 15px -3px transparentize(black, 0.5)
+
+
+
+
 
   @keyframes motion
     0%
@@ -151,3 +226,5 @@ body
     z-index: 996
   .waves-effect.waves-coral .waves-ripple
     background-color: rgba(255, 181, 181, 0.65)
+.filller
+  background: pink

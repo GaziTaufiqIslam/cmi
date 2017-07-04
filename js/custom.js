@@ -1,5 +1,9 @@
 $(document).ready(function(){
   $(".button-collapse").sideNav();
+  $('.carousel').carousel({
+    dist: -50,
+    shift: 50,
+  });
 
 if($(window).scrollTop>0)
 {
