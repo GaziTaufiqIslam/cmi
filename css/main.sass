@@ -230,10 +230,13 @@ body
     .col
       h4
         color: white
-        text-shadow: 0 0 4px #666
+        text-shadow: 0 0 4px transparentize(#444, 0.5)
       p
+        font:
+          size: 1.25rem
+          weight: 500
         color: white
-        text-shadow: 0 0 4px #666
+        text-shadow: 0 0 4px transparentize(#444, 0.5)
   #contact
     .map
       height: 50vh
@@ -243,10 +246,26 @@ body
         padding: 2rem 0
         text-align: center
         z-index: 2
+        background: transparentize(white, 0.75)
       iframe
         position: absolute
         height: 50%
         width: 100%
+  footer
+    .row
+      margin: 5rem auto 2rem
+      .col
+        margin: 1rem auto
+        h5
+          font-size: 1.35rem
+        a
+          display: block
+          font-size: 0.9rem
+          color: $accent
+    p
+      float: right
+
+
 
 
   @keyframes motion
@@ -265,5 +284,3 @@ body
     z-index: 996
   .waves-effect.waves-coral .waves-ripple
     background-color: rgba(255, 181, 181, 0.65)
-.filller
-  background: pink
