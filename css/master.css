@@ -6860,11 +6860,10 @@ body {
       animation: motion 120s linear infinite; }
   body #services {
     text-align: center;
-    padding: 5rem 0;
     position: relative; }
     body #services h3 {
       margin: 0;
-      padding: 5rem 0 2rem; }
+      padding: 10rem 0 2rem; }
     body #services p {
       margin: 0.5rem auto 0.25rem; }
     body #services .container {
