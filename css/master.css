@@ -6933,7 +6933,8 @@ body {
   body #products {
     padding: 5rem 0; }
     body #products h3 {
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 1rem; }
     body #products .carousel {
       height: 30rem;
       padding: 2rem 0; }
@@ -6969,6 +6970,45 @@ body {
             background-image: linear-gradient(to right, #F08080, #EF3232);
             color: white;
             box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.5); }
+  body #team {
+    padding: 3rem 0; }
+    body #team h3 {
+      text-align: center; }
+    body #team .container {
+      padding: 5rem 0; }
+      body #team .container .row .col {
+        text-align: center; }
+        body #team .container .row .col img {
+          height: 8rem;
+          border-radius: 100%;
+          border: 0.25rem solid #7FFFD4; }
+        body #team .container .row .col .discrete {
+          border: 0.25rem solid #F08080; }
+      body #team .container .liner {
+        border-top: 2px solid silver;
+        padding-top: 2rem; }
+  body #facts {
+    padding: 3rem 0;
+    background-image: linear-gradient(to right, #7FFFD4, #00FF7F);
+    text-align: center; }
+    body #facts .col h4 {
+      color: white;
+      text-shadow: 0 0 4px #666; }
+    body #facts .col p {
+      color: white;
+      text-shadow: 0 0 4px #666; }
+  body #contact .map {
+    height: 50vh; }
+    body #contact .map h3 {
+      position: relative;
+      margin: 0;
+      padding: 2rem 0;
+      text-align: center;
+      z-index: 2; }
+    body #contact .map iframe {
+      position: absolute;
+      height: 50%;
+      width: 100%; }
 @keyframes motion {
   0% {
     background-position: left 0px bottom 0px; }
