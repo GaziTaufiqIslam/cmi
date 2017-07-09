@@ -7069,6 +7069,10 @@ body {
         color: #F08080; }
   body footer p {
     float: right; }
+  body .coming-soon {
+    margin-top: calc(50vh - 5rem); }
+    body .coming-soon h4 {
+      color: #F08080; }
 @keyframes motion {
   0% {
     background-position: left 0px bottom 0px; }
