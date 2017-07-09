@@ -7057,6 +7057,23 @@ body {
         background-image: linear-gradient(to right, #F08080, #EF3232);
         color: white;
         box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.5); }
+  body #career .container {
+    text-align: center;
+    padding: 5rem 0; }
+    body #career .container p {
+      font-size: 1.75rem; }
+    body #career .container .call-to-action-2 {
+      font-size: 1.25rem;
+      color: #00FF7F;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      box-shadow: none;
+      transition: all 200ms ease-out;
+      box-shadow: 0px 3px 8px -3px rgba(0, 0, 0, 0.5); }
+      body #career .container .call-to-action-2:hover {
+        background-image: linear-gradient(to right, #7FFFD4, #00FF7F);
+        color: white;
+        box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.5); }
   body footer .row {
     margin: 5rem auto 2rem; }
     body footer .row .col {
