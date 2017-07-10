@@ -21,7 +21,7 @@ $(window).scroll(function (){
 });
 
 $(".side-nav li a").on('click', function() {
-  $(".side-nav").collapse('hide');
+  $(".side-nav").sideNav('hide');
 });
 //new code
 
