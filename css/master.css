@@ -6800,8 +6800,8 @@ body {
       color: #00FF7F; }
     body nav .container ul a {
       color: #222; }
-    body nav .brand-logo {
-      color: #00FF7F; }
+    body nav .brand-logo svg {
+      width: 3rem; }
   body .atop {
     box-shadow: none; }
   body .wrapper {
@@ -6816,7 +6816,9 @@ body {
     background-position: bottom;
     animation: motion 80s linear infinite; }
     body #home h1 {
-      font-size: 3.75rem;
+      font-family: "Permanent Marker", cursive;
+      font-weight: 300;
+      font-size: 3.5rem;
       color: #00FF7F;
       margin: 0;
       padding: 23vh 0 0; }
@@ -6949,9 +6951,13 @@ body {
         body #products .carousel .carousel-item h4 {
           font-size: 1.5rem;
           margin: 0;
-          padding: 3rem 0 1rem; }
+          padding: 2rem 0 1rem; }
+        body #products .carousel .carousel-item h5 {
+          font-size: 1.35rem;
+          margin: 0;
+          padding: 2rem 0 1rem; }
         body #products .carousel .carousel-item img {
-          height: 150px; }
+          height: 180px; }
         body #products .carousel .carousel-item .material-icons {
           line-height: 0;
           font-size: 16px;
@@ -6981,7 +6987,7 @@ body {
       body #team .container .row .col {
         text-align: center; }
         body #team .container .row .col img {
-          height: 8rem;
+          height: 12rem;
           border-radius: 100%;
           border: 0.25rem solid #7FFFD4; }
         body #team .container .row .col .discrete {
