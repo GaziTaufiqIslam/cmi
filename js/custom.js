@@ -19,6 +19,10 @@ $(window).scroll(function (){
     $('nav').addClass("atop");
   }
 });
+
+$(".side-nav li a").on('click', function() {
+  $(".side-nav").collapse('hide');
+});
 //new code
 
 }); //document.ready ends here
