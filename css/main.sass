@@ -11,8 +11,17 @@ body
       color: $primary-color
     .container
       ul
-        a
-          color: #222
+        li
+          a
+            color: #222
+            font:
+              weight: 700
+            text-transform: uppercase
+            color: darkgrey
+          &:hover
+            a
+              color: $text
+
     .brand-logo
       svg
         width: 3rem
@@ -140,12 +149,8 @@ body
 
   #about
     max-width: 80%
-    margin: 5rem auto
-    background:
-      image: url('../img/doctor-medical-team-illustration.jpg')
-      position: left center
-      size: contain
-      repeat: no-repeat
+    margin: 3rem auto
+
     h3
       text-align: center
     p
@@ -168,7 +173,13 @@ body
         a:hover
           svg
             box-shadow: 0px 2px 8px transparentize(black, 0.5)
-  @media (max-width: 600px)
+  @media (min-width: 700px)
+    .about
+      background:
+        image: url('../img/doctor-medical-team-illustration.jpg')
+        position: left center
+        size: contain
+        repeat: no-repeat
     .social-icons
       text-align: center
   #products
@@ -183,7 +194,7 @@ body
         text-align: center
         background: $primary-color
         min-width: 20rem
-        height: 28rem
+        height: 30rem
         border-radius: 3px
         h4
           font-size: 1.5rem
@@ -203,6 +214,9 @@ body
           font-size: 16px
           margin: 0.25rem
         .call-to-action
+          position: absolute
+          transform: translateX(-50%)
+          bottom: 2rem
           font-size: 1.25rem
           color: $accent
           margin-top: 1rem
@@ -232,8 +246,10 @@ body
           .discrete
             border: 0.25rem solid $accent
       .liner
-        border-top: 2px solid silver
+        border-top: 2px solid transparentize(silver, 0.5)
         padding-top: 2rem
+        p
+          color: grey
   #facts
     padding: 3rem 0
     background-image: linear-gradient(to right, $primary-light, $primary-color)
@@ -312,8 +328,7 @@ body
     .container
       text-align: center
       padding: 5rem 0
-      p
-        font-size: 1.75rem
+
       .call-to-action-2
         font-size: 1.25rem
         color: $primary-color
@@ -330,8 +345,9 @@ body
 
 
   footer
+    border-top: 2px solid transparentize(silver, 0.5)
     .row
-      margin: 5rem auto 2rem
+      margin: 2rem auto
       .col
         margin: 1rem auto
         h5
@@ -342,6 +358,7 @@ body
           color: $accent
     p
       float: right
+      color: grey
   .coming-soon
     margin-top: calc(50vh - 5rem)
     h4

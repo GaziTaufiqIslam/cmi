@@ -6791,15 +6791,20 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 body {
   background: #fff;
-  color: #222222; }
+  color: #444; }
   body nav {
     height: 10vh;
     background: rgba(255, 255, 255, 0.8);
     transition: all 300ms ease-in-out; }
     body nav .button-collapse {
       color: #00FF7F; }
-    body nav .container ul a {
-      color: #222; }
+    body nav .container ul li a {
+      color: #222;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: darkgrey; }
+    body nav .container ul li:hover a {
+      color: #444; }
     body nav .brand-logo svg {
       width: 3rem; }
   body .atop {
@@ -6908,11 +6913,7 @@ body {
       background-position: top; }
   body #about {
     max-width: 80%;
-    margin: 5rem auto;
-    background-image: url("../img/doctor-medical-team-illustration.jpg");
-    background-position: left center;
-    background-size: contain;
-    background-repeat: no-repeat; }
+    margin: 3rem auto; }
     body #about h3 {
       text-align: center; }
     body #about p {
@@ -6931,7 +6932,12 @@ body {
           fill: white; }
     body #about .m5 .social-icons a:hover svg {
       box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); }
-  @media (max-width: 600px) {
+  @media (min-width: 700px) {
+    body .about {
+      background-image: url("../img/doctor-medical-team-illustration.jpg");
+      background-position: left center;
+      background-size: contain;
+      background-repeat: no-repeat; }
     body .social-icons {
       text-align: center; } }
   body #products {
@@ -6946,7 +6952,7 @@ body {
         text-align: center;
         background: #00FF7F;
         min-width: 20rem;
-        height: 28rem;
+        height: 30rem;
         border-radius: 3px; }
         body #products .carousel .carousel-item h4 {
           font-size: 1.5rem;
@@ -6966,6 +6972,9 @@ body {
           font-size: 16px;
           margin: 0.25rem; }
         body #products .carousel .carousel-item .call-to-action {
+          position: absolute;
+          transform: translateX(-50%);
+          bottom: 2rem;
           font-size: 1.25rem;
           color: #F08080;
           margin-top: 1rem;
@@ -6993,8 +7002,10 @@ body {
         body #team .container .row .col .discrete {
           border: 0.25rem solid #F08080; }
       body #team .container .liner {
-        border-top: 2px solid silver;
+        border-top: 2px solid rgba(192, 192, 192, 0.5);
         padding-top: 2rem; }
+        body #team .container .liner p {
+          color: grey; }
   body #facts {
     padding: 3rem 0;
     background-image: linear-gradient(to right, #7FFFD4, #00FF7F);
@@ -7066,8 +7077,6 @@ body {
   body #career .container {
     text-align: center;
     padding: 5rem 0; }
-    body #career .container p {
-      font-size: 1.75rem; }
     body #career .container .call-to-action-2 {
       font-size: 1.25rem;
       color: #00FF7F;
@@ -7080,18 +7089,21 @@ body {
         background-image: linear-gradient(to right, #7FFFD4, #00FF7F);
         color: white;
         box-shadow: 0px 6px 15px -3px rgba(0, 0, 0, 0.5); }
-  body footer .row {
-    margin: 5rem auto 2rem; }
-    body footer .row .col {
-      margin: 1rem auto; }
-      body footer .row .col h5 {
-        font-size: 1.35rem; }
-      body footer .row .col a {
-        display: block;
-        font-size: 0.9rem;
-        color: #F08080; }
-  body footer p {
-    float: right; }
+  body footer {
+    border-top: 2px solid rgba(192, 192, 192, 0.5); }
+    body footer .row {
+      margin: 2rem auto; }
+      body footer .row .col {
+        margin: 1rem auto; }
+        body footer .row .col h5 {
+          font-size: 1.35rem; }
+        body footer .row .col a {
+          display: block;
+          font-size: 0.9rem;
+          color: #F08080; }
+    body footer p {
+      float: right;
+      color: grey; }
   body .coming-soon {
     margin-top: calc(50vh - 5rem); }
     body .coming-soon h4 {
